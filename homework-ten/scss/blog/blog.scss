@@ -1,0 +1,103 @@
+/* styling for the blog page */
+.blog {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+  .head {
+    font-family: Proxima Nova;
+    font-size: 30px;
+    letter-spacing: 3px;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+  }
+
+  .date {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+
+    .blue-box {
+      background-color: $site-blue;
+      width: 6%;
+      height: 60px;
+      margin-right: 20px;
+
+      .num {
+        font-size: 22px;
+        font-family: Gill Sans Bolded;
+        padding-top: 10px;
+      }
+
+      .mo {
+        font-size: 12px;
+        font-family: Gill Sans Light;
+      }
+
+      p {
+        margin: 0 auto;
+        text-align: center;
+        color: $white;
+      }
+    }
+
+    .right {
+      width: 94%;
+
+      .banner {
+        height: 260px;
+        background-image: url(../images/blog.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-family: Gill Sans Regular;
+        font-size: 15px;
+      }
+
+      .para {
+        font-family: Gill Sans Regular;
+        font-size: 13px;
+        color: $site-blue;
+        width: 375px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .blog {
+    margin: 0 auto;
+    display: block;
+    width: 650px;
+
+    .head {
+      margin-left: 17px;
+    }
+
+    .date {
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 90px;
+
+      .blue-box {
+        width: 10%;
+      }
+
+      .right {
+        width: 90%;
+
+        .banner {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

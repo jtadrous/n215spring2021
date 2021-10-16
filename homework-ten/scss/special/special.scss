@@ -1,0 +1,124 @@
+/* styling for the special offers page */
+.special {
+  max-width: 980px;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  padding-bottom: 260px;
+
+  .head1 {
+    padding-top: 50px;
+    font-family: Proxima Nova;
+    font-size: 30px;
+    width: 184px;
+    border-bottom: 2px black solid;
+    padding-bottom: 5px;
+  }
+
+  .offer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+    .imgLeft {
+      width: 185px;
+      height: 250px;
+    }
+
+    .spain {
+      background-image: url(../images/special-offer-01.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .thailand {
+      background-image: url(../images/special-offer-02.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .textRight {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      width: 320px;
+
+      .top {
+        display: flex;
+        flex-direction: row;
+
+        .head2 {
+          font-family: Proxima Nova;
+          font-size: 30px;
+          border-bottom: 2px solid black;
+          width: 182px;
+          letter-spacing: 3px;
+          padding-bottom: 5px;
+        }
+
+        .head3 {
+          font-family: Proxima Nova;
+          font-size: 30px;
+          border-bottom: 2px solid black;
+          width: 198px;
+          letter-spacing: 3px;
+          padding-bottom: 5px;
+        }
+
+        .price {
+          margin-top: 8px;
+          margin-left: 20px;
+          font-family: Proxima Nova;
+          color: #ff7d38;
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-family: Gill Sans Light;
+        font-size: $about-font-size;
+        letter-spacing: 1.5px;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 40%;
+        font-family: Gill Sans Regular;
+        background-color: $site-blue;
+        padding: 12px 15px;
+        border: none;
+        font-size: 15px;
+        border-radius: 20px;
+        color: $white;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .special {
+    margin: 0 auto;
+    display: block;
+    width: 650px;
+
+    .head1 {
+      margin-left: 17px;
+    }
+
+    .offer {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      .textRight {
+        width: 65%;
+        height: 290px;
+      }
+    }
+  }
+}
