@@ -1,3 +1,3 @@
-# homework-three
+# Homework Three
 
-# Web 4 Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/homework-three/
+Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/homework-three/
