@@ -1,0 +1,89 @@
+/* styling for the promo tours cards on the home page */
+.promo-tours {
+  //width: 65%;
+  max-width: 1280px;
+  height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  color: $white;
+
+  button {
+    margin-top: 40px;
+    font-family: Gill Sans Regular;
+    background-color: $site-blue;
+    padding: 12px 25px;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    color: $white;
+  }
+
+  p {
+    padding-top: 50px;
+  }
+
+  .country {
+    font-size: $large-text;
+    font-family: Proxima Nova;
+  }
+
+  .cost {
+    font-size: 30px;
+    font-family: Proxima Nova;
+  }
+
+  .promo1 {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .promo2 {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .promo3 {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 100%;
+    min-width: 650px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: -50px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+    .promo1,
+    .promo2,
+    .promo3 {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+}
