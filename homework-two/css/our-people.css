@@ -1,0 +1,13 @@
+.our-people {
+  height: 1800px;
+  display: flex;
+}
+.our-people .spot-one {
+  width: 100%;
+}
+.our-people .spot-one .left4 {
+  width: 50%;
+}
+.our-people .spot-one .right4 {
+  width: 50%;
+}

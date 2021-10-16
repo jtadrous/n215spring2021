@@ -1,0 +1,193 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+/*for basic structure code for the whole html, like styling the body tag or doing the reset code*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fffff5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+section {
+  padding: 20px 20px 20px 20px;
+  /*top, right, bottom, left*/
+}
+
+/*styling for the navigation bar*/
+nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  /*makes sure the position of the nav is ontop of the page instead of sitting above at a higher position (0,0) don't have to scroll down*/
+  background-color: #cca8ff;
+  display: flex;
+  justify-content: space-evenly;
+  /*horizontally centers elements in the middle*/
+  align-items: center;
+  /*vertically centers elements in the middle*/
+  /*anything above just styles the nav tag*/
+  /*this is a compound selector ^^ (styles any anchors nested within the nav tag)*/
+}
+nav a {
+  text-decoration: overline;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/*styling for the home section*/
+.home {
+  padding-top: 100px;
+  background-color: #fffff5;
+  height: 75%;
+}
+
+/*styling for the inventory section*/
+.inventory {
+  background-color: #b8c4b1;
+}
+.inventory .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inventory .grid .imgbox {
+  padding: 10px 20px;
+}
+.inventory .grid .imgbox .caption {
+  text-align: center;
+  background-color: #cca8ff;
+}
+.inventory .grid .imgbox img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 4px;
+}
+
+/*styling for the contact section*/
+.contact {
+  height: 80%;
+  background-color: #fffff5;
+}
+.contact .row2 {
+  display: flex;
+}
+.contact .row2 .left {
+  padding-top: 40px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact .row2 .left img {
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+}
+.contact .row2 .left #send {
+  background-color: #b8c4b1;
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 4px;
+}
+.contact .row2 .right {
+  width: 50%;
+}
+.contact .row2 .right img {
+  margin-left: 100px;
+  width: 350px;
+  height: 350px;
+}
+
+/*styling for the about section*/
+.about {
+  padding-top: 100px;
+  height: 80%;
+  background-color: #fffff5;
+}
+.about .row1 {
+  display: flex;
+}
+.about .row1 .left {
+  padding-top: 50px;
+  width: 60%;
+  align-items: center;
+}
+.about .row1 .right {
+  width: 40%;
+  padding-left: 150px;
+}
+.about .row1 .right img {
+  width: 250px;
+  height: 250px;
+}
+
+/*styling for the behind-the-scenes section*/
+.bts {
+  background-color: #b8c4b1;
+  height: 100%;
+  text-align: center;
+}
+.bts .video {
+  width: 60%;
+  margin: auto;
+}
+
+/*styling for the calendar section*/
+.calendar {
+  background-color: #fffff5;
+  height: 80%;
+}
+.calendar table {
+  margin: auto;
+}
+.calendar table td,
+.calendar table th {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.calendar table td img,
+.calendar table th img {
+  width: 100px;
+  height: 100px;
+}
+
+/*styling for the footer*/
+.footer {
+  height: 60px;
+  margin-top: 30px;
+  background-color: #cca8ff;
+}
+.footer .row4 {
+  width: 100%;
+  display: flex;
+}
+.footer .row4 .left {
+  width: 90%;
+}
+.footer .row4 .right {
+  width: 10%;
+}
+.footer .row4 .right img {
+  width: 30px;
+  height: 30px;
+}

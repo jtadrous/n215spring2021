@@ -1,0 +1,34 @@
+/* styling for each block section of the page */
+.content-sections {
+  position: relative;
+  width: $content-width;
+  min-width: 200px;
+  margin-left: calc(50% - 390px);
+  align-items: center;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .left-triangle {
+    position: absolute; /* makes it inline with text instead of above */
+    top: 50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: $orange-color transparent transparent transparent;
+  }
+
+  .right-triangle {
+    position: absolute; /* makes it inline with text instead of above */
+    top: 50px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 40px 0;
+    border-color: transparent $orange-color transparent transparent;
+  }
+}

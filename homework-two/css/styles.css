@@ -1,0 +1,412 @@
+/* variables are used for efficiency, only have to change values in once central place */
+/* a specific background color variable for the nav bar */
+/* has to be imported first so other files can see it */
+/* basic css reset for the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.full-width {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gathering {
+  background-image: url(../images/hero_1.jpg);
+}
+
+.winter {
+  background-image: url(../images/hero_2.jpg);
+}
+
+.landscape {
+  background-image: url(../images/hero_3.jpeg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* styling for the navigation bar */
+nav {
+  position: fixed;
+  /* outside of any parent, it is always fixed to the top left corner */
+  width: 200px;
+  height: 100vh;
+  /* sets the element height to whatever the viewport height is */
+  /* height: 100%; only works if the parent css height is already defined */
+  background-color: #333;
+  z-index: 99;
+  /* it puts the nav bar on the 99th z layer
+     if you did -99 it would be at the bottom but rn its at tha top 
+     but u usually use much smaller numbers - justin */
+  left: calc(50% - 585px);
+  /* left: calc(50% - 200px); this puts the right edge of the bar in the center
+     left: calc(50% - 100px); this completely centers the nav bar */
+}
+nav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+nav .line {
+  width: 80%;
+  border: 0.5px solid #4e4e4e;
+  margin: auto;
+}
+nav .links {
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* adds space between links vertically */
+  height: 320px;
+  /*.current {
+    color: chocolate;
+  }*/
+}
+nav .links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+}
+nav .links a:hover {
+  color: #fa6e1a;
+}
+
+/* styling for each block section of the page */
+.content-sections {
+  position: relative;
+  width: 970px;
+  min-width: 200px;
+  margin-left: calc(50% - 390px);
+  align-items: center;
+}
+.content-sections p {
+  margin-bottom: 0px;
+}
+.content-sections .left-triangle {
+  position: absolute;
+  /* makes it inline with text instead of above */
+  top: 50px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  border-color: #fa6e1a transparent transparent transparent;
+}
+.content-sections .right-triangle {
+  position: absolute;
+  /* makes it inline with text instead of above */
+  top: 50px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent #fa6e1a transparent transparent;
+}
+
+.who-we-are {
+  height: 622px;
+  display: flex;
+}
+.who-we-are .left1 {
+  width: 50%;
+  padding: 50px;
+}
+.who-we-are .right1 {
+  width: 50%;
+  padding: 40px 0 40px 40px;
+}
+.who-we-are .right1 h1 {
+  font-style: italic;
+  font-size: 80px;
+}
+.who-we-are .right1 p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.case-study {
+  height: 1825px;
+  display: flex;
+  flex-direction: column;
+}
+.case-study #box-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 775px;
+}
+.case-study #box-one .left2 {
+  width: 50%;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+.case-study #box-one .right2 {
+  width: 50%;
+  padding: 40px;
+}
+.case-study #box-one .right2 h1 {
+  font-style: italic;
+  font-size: 80px;
+}
+.case-study #box-one .right2 h2 {
+  font-size: 30px;
+}
+.case-study #box-one .right2 h3 {
+  font-size: 25px;
+}
+.case-study #box-one .right2 p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.case-study #box-one .right2 #strip {
+  display: flex;
+  flex-direction: row;
+}
+.case-study #box-one .right2 #strip img {
+  width: 140px;
+  height: 110px;
+  padding: 2px;
+}
+.case-study #box-one .right2 #strip .container {
+  position: relative;
+}
+.case-study #box-one .right2 #strip .overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 98%;
+  height: 95%;
+  color: white;
+  font-size: 11px;
+  font-weight: bolder;
+  padding: 45px 0;
+  text-align: center;
+}
+.case-study #box-two {
+  height: 600px;
+  padding-left: 20px;
+}
+.case-study #box-three {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.case-study #box-three p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.case-study #box-three .left3 {
+  height: 450px;
+  width: 50%;
+  padding: 30px 0 30px 30px;
+  margin-left: 5px;
+}
+.case-study #box-three .right3 {
+  height: 450px;
+  width: 50%;
+  padding: 30px 0 30px 30px;
+}
+.case-study #box-three .right3 #quote {
+  border-left: 1px solid black;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.clients {
+  height: 1495px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.clients .top {
+  width: 100%;
+  display: flex;
+}
+.clients .top #start {
+  width: 37%;
+  border-top: 1px solid black;
+  margin: 45px 0 0 40px;
+}
+.clients .top #middle {
+  width: 25%;
+}
+.clients .top #middle h1 {
+  padding-top: 25px;
+  font-size: 30px;
+}
+.clients .top #end {
+  width: 37%;
+  border-top: 1px solid black;
+  margin: 45px 40px 0 0;
+}
+.clients .logos {
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.clients .logos img {
+  padding: 25px;
+}
+.clients hr {
+  width: 20%;
+  margin: auto;
+  margin-top: 30px;
+}
+.clients .quotes {
+  height: 645px;
+  text-align: center;
+}
+.clients .quotes h1 {
+  padding-top: 50px;
+  font-size: 30px;
+}
+.clients .quotes .slides {
+  display: flex;
+  flex-direction: row;
+}
+.clients .quotes .slides a {
+  text-decoration: none;
+  font-size: 30px;
+}
+.clients .quotes .slides .left-arrow {
+  width: 15%;
+  text-align: right;
+  margin: auto;
+  padding: 200px 30px 30px 30px;
+}
+.clients .quotes .slides .text {
+  width: 70%;
+}
+.clients .quotes .slides .text h2 {
+  font-size: 30px;
+}
+.clients .quotes .slides .text #name {
+  text-align: right;
+}
+.clients .quotes .slides .right-arrow {
+  width: 15%;
+  text-align: left;
+  margin: auto;
+  padding: 200px 30px 30px 30px;
+}
+
+.our-people {
+  height: 1950px;
+  display: flex;
+  flex-direction: column;
+}
+.our-people .spot-one {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.our-people .spot-one .left4 {
+  width: 50%;
+  padding: 40px;
+}
+.our-people .spot-one .left4 h1 {
+  font-style: italic;
+  font-size: 80px;
+}
+.our-people .spot-one .left4 p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.our-people .spot-one .right4 {
+  width: 50%;
+  padding: 40px;
+}
+.our-people #middle {
+  width: 20%;
+}
+.our-people #middle hr {
+  margin: 25px 0 40px 0;
+  font-size: 30px;
+}
+.our-people .spot-two {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.our-people .spot-two img {
+  margin: 25px;
+  width: 190px;
+  height: 190px;
+}
+.our-people .spot-two .profile {
+  position: relative;
+}
+.our-people .spot-two .overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 190px;
+  height: 190px;
+  color: white;
+  font-size: 11px;
+  font-weight: bolder;
+  padding: 90px 0;
+  text-align: center;
+  margin: 25px;
+}
+.our-people .spot-three {
+  height: 700px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.our-people .spot-three .left5 {
+  width: 50%;
+}
+.our-people .spot-three .left5 img {
+  padding: 50px 0 0 40px;
+  width: 500px;
+  height: 335px;
+}
+.our-people .spot-three .right5 {
+  width: 50%;
+  padding: 50px;
+}
+.our-people .spot-three .right5 h4 {
+  font-size: 25px;
+}
+.our-people .spot-three .right5 p {
+  font-size: 16px;
+  line-height: 25px;
+}

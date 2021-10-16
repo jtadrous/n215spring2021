@@ -1,0 +1,24 @@
+/*styling for the footer*/
+.footer {
+  height: 60px;
+  margin-top: 30px;
+  background-color: #cca8ff;
+
+  .row4 {
+    width: 100%;
+    display: flex;
+
+    .left {
+      width: 90%;
+    }
+
+    .right {
+      width: 10%;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

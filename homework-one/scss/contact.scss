@@ -1,0 +1,41 @@
+/*styling for the contact section*/
+.contact {
+  height: 80%;
+  background-color: #fffff5;
+
+  .row2 {
+    display: flex;
+
+    .left {
+      padding-top: 40px;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        padding: 15px;
+        width: 100px;
+        height: 100px;
+      }
+
+      #send {
+        background-color: #b8c4b1;
+        border: none;
+        padding: 10px 25px;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
+
+    .right {
+      width: 50%;
+
+      img {
+        margin-left: 100px;
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}

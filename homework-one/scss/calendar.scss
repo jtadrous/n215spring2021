@@ -1,0 +1,21 @@
+/*styling for the calendar section*/
+.calendar {
+  background-color: #fffff5;
+  height: 80%;
+
+  table {
+    margin: auto;
+
+    td,
+    th {
+      border: 3px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

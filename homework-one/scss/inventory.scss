@@ -1,0 +1,27 @@
+/*styling for the inventory section*/
+.inventory {
+  background-color: #b8c4b1;
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .imgbox {
+      padding: 10px 20px;
+
+      .caption {
+        text-align: center;
+        background-color: #cca8ff;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+        border: 5px solid white;
+        border-radius: 4px;
+      }
+    }
+  }
+}

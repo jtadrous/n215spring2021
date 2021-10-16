@@ -1,0 +1,25 @@
+/*styling for the about section*/
+.about {
+  padding-top: 100px;
+  height: 80%;
+  background-color: #fffff5;
+
+  .row1 {
+    display: flex;
+
+    .left {
+      padding-top: 50px;
+      width: 60%;
+      align-items: center;
+    }
+
+    .right {
+      width: 40%;
+      padding-left: 150px;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}

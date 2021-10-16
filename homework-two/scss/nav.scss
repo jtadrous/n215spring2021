@@ -1,0 +1,54 @@
+/* styling for the navigation bar */
+nav {
+  position: fixed; /* outside of any parent, it is always fixed to the top left corner */
+  width: 200px;
+  height: 100vh; /* sets the element height to whatever the viewport height is */
+  /* height: 100%; only works if the parent css height is already defined */
+  background-color: $nav-background-color;
+  z-index: 99;
+  /* it puts the nav bar on the 99th z layer
+     if you did -99 it would be at the bottom but rn its at tha top 
+     but u usually use much smaller numbers - justin */
+  left: calc(50% - 585px);
+  //left: 200px;
+  /* left: calc(50% - 200px); this puts the right edge of the bar in the center
+     left: calc(50% - 100px); this completely centers the nav bar */
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+
+  .line {
+    width: 80%;
+    border: 0.5px solid #4e4e4e;
+    margin: auto;
+  }
+
+  .links {
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* adds space between links vertically */
+    //align-items: center; /* centers the text links */
+    height: 320px;
+
+    /*.current {
+      color: chocolate;
+    }*/
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+      margin-left: 40px;
+    }
+
+    a:hover {
+      color: $orange-color;
+    }
+  }
+}
