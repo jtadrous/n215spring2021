@@ -1,0 +1,109 @@
+/* styling for the about page of the site */
+.about {
+  max-width: 1280px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+
+  .top {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+
+    .left {
+      width: 50%;
+      padding: 20px;
+
+      img {
+        padding-top: 10px;
+        width: 250px;
+        height: auto;
+      }
+    }
+
+    .right {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .fav {
+    background-color: $dark-peach;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+
+  .bottom {
+    width: 70%;
+    background-color: $peach-color;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+
+    .left1 {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .right1 {
+      width: 50%;
+      padding: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 980px) {
+  .about {
+    .top {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+
+    .bottom {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      .left1 {
+        width: 100%;
+      }
+
+      .right1 {
+        width: 100%;
+      }
+    }
+  }
+}

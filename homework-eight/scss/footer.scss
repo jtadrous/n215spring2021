@@ -1,0 +1,30 @@
+/* styling for the footer of the site */
+footer {
+  max-width: 1280px;
+  min-width: 650px;
+  height: 55px;
+  margin: 0 auto;
+  background-color: $peach-color;
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-top: dotted black 1.5px;
+
+  h3,
+  p {
+    margin-top: 15px;
+  }
+
+  .right {
+    display: flex;
+
+    .icons {
+      width: 40px;
+      height: auto;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
