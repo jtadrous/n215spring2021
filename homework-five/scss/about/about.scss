@@ -1,0 +1,119 @@
+/* styling for the about page */
+.about {
+  //max-width: 80%;
+  max-width: 980px;
+  //min-width: 650px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+
+  .about-top-section {
+    margin-top: 100px;
+
+    .head1 {
+      font-size: $large-text;
+      max-width: 140px;
+      font-family: Proxima Nova;
+      border-bottom: black solid 2px;
+      letter-spacing: 4px;
+    }
+
+    .para1 {
+      font-size: $about-font-size;
+      font-family: Gill Sans Regular;
+    }
+  }
+
+  .about-bottom-section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    max-width: 676px;
+    min-height: 150px;
+
+    .head2 {
+      font-size: 40px;
+      width: 240px;
+      max-width: 260px;
+      font-family: Proxima Nova;
+      border-bottom: black solid 2px;
+      margin-bottom: 30px;
+      letter-spacing: 4px;
+    }
+
+    .client {
+      display: flex;
+      margin-bottom: 38px;
+
+      .client-image {
+        width: 260px;
+        height: 150px;
+      }
+
+      .client1 {
+        background-image: url(../images/about-client-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client2 {
+        background-image: url(../images/about-client-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client-quote {
+        width: 456px;
+        position: relative;
+        min-height: 50px;
+        padding-left: 25px;
+        font-family: Gill Sans Italics;
+
+        .para2 {
+          font-size: $about-font-size;
+
+          &:last-of-type {
+            margin-bottom: 55px;
+          }
+        }
+
+        .client-name {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-family: Proxima Nova;
+          font-size: 20px;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+
+    .about-top-section {
+      .para1 {
+        min-width: 600px;
+      }
+    }
+
+    .about-bottom-section {
+      .client {
+        .client-image {
+          min-width: 250px;
+        }
+
+        .client-quote {
+          min-width: 360px;
+        }
+      }
+    }
+  }
+}

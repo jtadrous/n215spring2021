@@ -1,0 +1,42 @@
+/* basic css reset for the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill Sans Regular;
+  src: url(fonts/Gill-Sans/GillSans.ttf);
+}
+
+@font-face {
+  font-family: Gill Sans Light;
+  src: url(fonts/Gill-Sans/GillSans-Light.ttf);
+}
+
+@font-face {
+  font-family: Gill Sans Italics;
+  src: url(fonts/Gill-Sans/GillSans-Italic.ttf);
+}
+
+//Downloaded from: https://en.m.fontke.com/font/13864520/download/
+@font-face {
+  font-family: Proxima Nova;
+  src: url(fonts/Mark-Simonson-Proxima-Nova-ScOsf-Extra-Condensed-Thin.otf);
+}
