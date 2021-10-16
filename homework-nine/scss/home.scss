@@ -1,0 +1,188 @@
+/* styling for the home page of this site */
+.home {
+  max-width: 1280px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: $peach-color;
+    border-radius: 10px;
+    width: 50%;
+  }
+
+  .homeImg {
+    margin: 40px 0 590px 175px;
+
+    .contain1 {
+      #look3 {
+        border-left: $dark-peach solid 8px;
+        position: absolute;
+        z-index: 3;
+        width: 250px;
+        height: 230px;
+        margin-top: 120px;
+      }
+
+      p {
+        color: black;
+        position: absolute;
+        z-index: 4;
+        margin-top: 355px;
+      }
+    }
+
+    .contain2 {
+      #look1 {
+        border-top: $dark-peach solid 8px;
+        border-bottom: $dark-peach solid 8px;
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: 480px;
+        margin-left: 200px;
+      }
+
+      p {
+        color: black;
+        position: absolute;
+        z-index: 4;
+        margin-top: 485px;
+        margin-left: 310px;
+      }
+    }
+
+    .contain3 {
+      #look2 {
+        border-right: $dark-peach solid 8px;
+        position: absolute;
+        z-index: 2;
+        width: 270px;
+        height: 400px;
+        margin: 40px 0 0 650px;
+      }
+
+      p {
+        color: black;
+        position: absolute;
+        z-index: 4;
+        margin-top: 445px;
+        margin-left: 715px;
+      }
+    }
+  }
+
+  .text {
+    max-width: 930px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: $peach-color;
+    padding: 20px;
+
+    .para {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 1060px) {
+  .home {
+    .homeImg {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      .contain1 {
+        margin: 0 auto;
+        padding: 40px;
+
+        #look3 {
+          position: initial;
+          z-index: 0;
+          width: 100%;
+          height: auto;
+          border: none;
+          margin: 0 auto;
+        }
+
+        p {
+          position: initial;
+          z-index: 0;
+          width: 60%;
+          height: auto;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+
+      .contain2 {
+        margin: 0 auto;
+        padding: 20px;
+
+        #look1 {
+          position: initial;
+          z-index: 0;
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          border: none;
+          margin: 0 auto;
+        }
+
+        p {
+          position: initial;
+          z-index: 0;
+          width: 60%;
+          height: auto;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+
+      .contain3 {
+        margin: 0 auto;
+        padding: 40px 40px 60px 40px;
+
+        #look2 {
+          position: initial;
+          z-index: 0;
+          width: 100%;
+          height: auto;
+          border: none;
+          margin: 0 auto;
+        }
+
+        p {
+          position: initial;
+          z-index: 0;
+          width: 60%;
+          height: auto;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+
+    .text {
+      max-width: 70%;
+      flex-direction: column;
+
+      .para {
+        width: 100%;
+      }
+    }
+  }
+}

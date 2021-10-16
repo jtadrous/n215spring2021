@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Nine</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <!--classes are for html/styling, we save ids for javascript-->
+        <a id="home" href="#">Home</a>
+        <a id="about" href="#">About</a>
+        <a id="looks" href="#">Looks</a>
+        <a id="contact" href="#">Contact</a>
+    </nav>
+    <div id="app"></div>
+    <footer>
+        <h3>Julie's Lookbook</h3>
+        <p>© 2021 Julie’s Lookbook - All Rights Reserved.</p>
+        <div class="right">
+            <img class="icons" src="images/instagram-icon.png" alt="instagram-icon">
+            <img class="icons" src="images/pinterest-icon.png" alt="pinterest-icon">
+            <img class="icons" src="images/facebook-icon.png" alt="facebook-icon">
+        </div>
+    </footer>
+    <!--Javascript always goes at the end of the body-->
+    <!--<script src="lib/jquery-3.6.0.min.js"></script>-->
+    <!--have to load in jquery first-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--cdn link-->
+    <script type="module" src="model/model.js"></script> <!--then js second-->
+    <script type="module" src="app/app.js"></script> 
+</body>
+</html>
