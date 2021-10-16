@@ -1,0 +1,72 @@
+.booking-form {
+  width: 825px;
+  height: 1050px;
+  margin: 0 auto;
+
+  .header {
+    padding: 60px 0 10px 0;
+    font-size: $large-text;
+    font-family: Proxima Nova;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+    font-family: Gill Sans Light;
+    margin-bottom: 50px;
+
+    input,
+    textarea,
+    select {
+      border: 1px solid $site-blue;
+      padding: 20px;
+      font-size: 18px;
+      font-family: Gill Sans Light;
+    }
+
+    label {
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #name,
+    #country {
+      width: 44%;
+    }
+
+    #email,
+    #hotel {
+      width: 54%;
+    }
+
+    #checkin,
+    #checkout {
+      width: 85%;
+      float: right;
+    }
+
+    #submit {
+      margin-top: 40px;
+      font-family: Gill Sans Regular;
+      background-color: $site-blue;
+      padding: 25px;
+      border: none;
+      font-size: 15px;
+      border-radius: 35px;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/* styling for the nav bar at the top of the page */
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: $white solid 2px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Gill Sans Regular;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+  }
+
+  .links {
+    width: 542px;
+    height: 42px;
+    justify-content: space-around;
+    align-self: center;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      margin: auto;
+      padding: 2px 23px 0;
+      border-right: 1px solid $site-blue;
+      font-size: 15px;
+    }
+
+    #last {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: $site-blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .logo {
+    width: 30%;
+  }
+
+  p {
+    width: 40%;
+    font-family: Gill Sans Regular;
+    font-size: 12px;
+  }
+
+  .icons {
+    width: 30%;
+  }
+}

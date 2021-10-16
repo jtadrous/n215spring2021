@@ -1,0 +1,256 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+/* global variables for the project */
+/*for basic structure code for the whole html, like styling the body tag or doing the reset code*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill Sans Regular;
+  src: url(fonts/Gill-Sans/GillSans.ttf);
+}
+@font-face {
+  font-family: Gill Sans Light;
+  src: url(fonts/Gill-Sans/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Gill Sans Italics;
+  src: url(fonts/Gill-Sans/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url(fonts/Mark-Simonson-Proxima-Nova-ScOsf-Extra-Condensed-Thin.otf);
+}
+/* styling for the hero image at the top of the page */
+.hero {
+  width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  /* only works if you have a width defined */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+}
+.hero .title {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.hero .title .name {
+  font-family: Proxima Nova;
+  font-size: 60px;
+  margin-top: 95px;
+}
+.hero .title .lorem {
+  font-size: 20px;
+  margin-top: 30px;
+  font-family: Gill Sans Italics;
+}
+.hero .title button {
+  background-color: #79addc;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  font-size: 15px;
+  margin-top: 25px;
+  font-family: Gill Sans Regular;
+}
+
+/* styling for the promo tours cards */
+.promo-tours {
+  width: 1280px;
+  height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  color: #fff;
+}
+.promo-tours button {
+  margin-top: 40px;
+  font-family: Gill Sans Regular;
+  background-color: #79addc;
+  padding: 12px 25px;
+  border: none;
+  font-size: 15px;
+  border-radius: 20px;
+  color: #fff;
+}
+.promo-tours p {
+  padding-top: 50px;
+}
+.promo-tours .country {
+  font-size: 60px;
+  font-family: Proxima Nova;
+}
+.promo-tours .cost {
+  font-size: 30px;
+  font-family: Proxima Nova;
+}
+.promo-tours .promo1 {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours .promo2 {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-tours .promo3 {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+footer .logo {
+  width: 30%;
+}
+footer p {
+  width: 40%;
+  font-family: Gill Sans Regular;
+  font-size: 12px;
+}
+footer .icons {
+  width: 30%;
+}
+
+.booking-form {
+  width: 825px;
+  height: 1050px;
+  margin: 0 auto;
+}
+.booking-form .header {
+  padding: 60px 0 10px 0;
+  font-size: 60px;
+  font-family: Proxima Nova;
+}
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+  font-family: Gill Sans Light;
+  margin-bottom: 50px;
+}
+.booking-form form input,
+.booking-form form textarea,
+.booking-form form select {
+  border: 1px solid #79addc;
+  padding: 20px;
+  font-size: 18px;
+  font-family: Gill Sans Light;
+}
+.booking-form form label {
+  align-items: center;
+  margin-top: 20px;
+}
+.booking-form form .one,
+.booking-form form .two,
+.booking-form form .three,
+.booking-form form .four,
+.booking-form form .five {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.booking-form form #name,
+.booking-form form #country {
+  width: 44%;
+}
+.booking-form form #email,
+.booking-form form #hotel {
+  width: 54%;
+}
+.booking-form form #checkin,
+.booking-form form #checkout {
+  width: 85%;
+  float: right;
+}
+.booking-form form #submit {
+  margin-top: 40px;
+  font-family: Gill Sans Regular;
+  background-color: #79addc;
+  padding: 25px;
+  border: none;
+  font-size: 15px;
+  border-radius: 35px;
+  color: #fff;
+}
+
+/* styling for the nav bar at the top of the page */
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: #fff solid 2px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Gill Sans Regular;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+}
+nav .links {
+  width: 542px;
+  height: 42px;
+  justify-content: space-around;
+  align-self: center;
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  padding: 2px 23px 0;
+  border-right: 1px solid #79addc;
+  font-size: 15px;
+}
+nav .links #last {
+  border-right: none;
+}
