@@ -1,0 +1,11 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+@import "variables.scss";
+@import "structure.scss";
+
+//Home assets
+@import "home/hero.scss";
+@import "home/promo-tours.scss";
+@import "footer/footer.scss";
+@import "home/form/booking-form.scss";
+@import "home/nav.scss";
