@@ -1,0 +1,91 @@
+/* styling for the blog post pages */
+.post {
+  max-width: 980px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 600px;
+  overflow: auto;
+  min-height: 100vh;
+  padding-top: 55px;
+
+  .banner {
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(238, 67, 103, 0.6),
+        rgba(238, 67, 103, 0.6)
+      ),
+      url(../images/blog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 980px;
+    height: 300px;
+
+    .pink-box {
+      background-color: $site-pink;
+      height: 155px;
+      width: 155px;
+      margin-right: 20px;
+      color: $site-white;
+      position: absolute;
+      left: 410px;
+      top: 70px;
+
+      .num {
+        font-size: 55px;
+        font-family: GillSans-Bold;
+        padding-top: 25px;
+      }
+
+      .mo {
+        font-size: 31px;
+        font-family: GillSans-Light;
+      }
+
+      p {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .head {
+    color: $site-pink;
+    font-family: GillSans;
+    font-size: 20px;
+    padding-top: 57px;
+  }
+
+  .para {
+    font-family: GillSans-Light;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    width: 855px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .post {
+    max-width: 600px;
+
+    .banner {
+      width: 600px;
+      margin: 0 auto;
+
+      .pink-box {
+        left: 235px;
+      }
+    }
+
+    .head {
+      margin-left: 30px;
+    }
+
+    .para {
+      width: 550px;
+      margin-left: 30px;
+    }
+  }
+}

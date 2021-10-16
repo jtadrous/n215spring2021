@@ -1,0 +1,62 @@
+/* styling for the about page */
+.about {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 455px;
+  overflow: auto;
+  min-height: 100vh;
+
+  .head {
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 209, 64, 0.8),
+        rgba(255, 209, 64, 0.8)
+      ),
+      url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 380px;
+
+    .title {
+      font-size: 25px;
+      font-family: GillSans;
+      border-bottom: solid $site-black 2px;
+      width: 230px;
+      position: absolute;
+      bottom: -34px;
+      padding-bottom: 12px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .para {
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
+    font-size: 16px;
+    font-family: GillSans-LightItalic;
+    letter-spacing: 1.6px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    max-width: 650px;
+    padding-bottom: 600px;
+
+    .head {
+      width: 600px;
+
+      .title {
+        bottom: -36px;
+      }
+    }
+
+    .para {
+      width: 600px;
+    }
+  }
+}

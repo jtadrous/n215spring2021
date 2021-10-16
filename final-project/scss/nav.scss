@@ -1,0 +1,72 @@
+/* styling for the nav at the top of the page */
+.contain {
+  max-width: 1280px;
+  min-width: 650px;
+  margin: 0 auto;
+
+  nav {
+    margin: 0 auto;
+    max-width: 980px;
+    border-bottom: $site-black solid 2px;
+    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: GillSans;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      justify-content: left;
+      padding-top: 30px;
+    }
+
+    .links {
+      width: 375px;
+      height: 35px;
+      justify-content: space-around;
+      align-self: center;
+      display: flex;
+
+      .slant {
+        height: 25px;
+        border-right: 1px solid $site-pink;
+        transform: rotate(30deg) translateY(100%);
+        margin: 15px 0 0 22px;
+        padding-top: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $site-black;
+        margin: auto;
+        padding-top: 40px;
+        font-size: 15px;
+        letter-spacing: 2px;
+
+        &:last-child {
+          border: none;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  .white {
+    border-color: $site-white;
+
+    .links {
+      a {
+        color: $site-white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    width: 600px;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}

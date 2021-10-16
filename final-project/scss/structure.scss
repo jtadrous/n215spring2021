@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(fonts/Gill-Sans/GillSans.ttf);
+}
+
+@font-face {
+  font-family: GillSans-Italic;
+  src: url(fonts/Gill-Sans/GillSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: GillSans-SemiBoldItalic;
+  src: url(fonts/Gill-Sans/GillSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: GillSans-Bold;
+  src: url(fonts/Gill-Sans/GillSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: GillSans-Light;
+  src: url(fonts/Gill-Sans/GillSans-Light.ttf);
+}
+
+@font-face {
+  font-family: GillSans-LightItalic;
+  src: url(fonts/Gill-Sans/GillSans-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-Bold;
+  src: url(fonts/PTSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-BoldItalic;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-Italic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-Regular;
+  src: url(fonts/PTSerif-Regular.ttf);
+}

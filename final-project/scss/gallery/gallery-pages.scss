@@ -1,0 +1,142 @@
+/* styling for the individual gallery pages */
+.galpage {
+  max-width: 980px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 455px;
+  overflow: auto;
+  min-height: 100vh;
+
+  .top {
+    height: 400px;
+    width: 980px;
+    position: relative;
+    font-family: GillSans;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .num {
+      font-size: 300px;
+      position: absolute;
+      bottom: -85px;
+    }
+
+    .title {
+      position: absolute;
+      font-size: 140px;
+      bottom: -47px;
+      left: 250px;
+    }
+  }
+
+  .food {
+    color: $site-yellow;
+    background-image: linear-gradient(
+        to right,
+        $overlay-yellow,
+        $overlay-yellow
+      ),
+      url(../images/1.png);
+
+    .title {
+      left: 215px;
+    }
+  }
+
+  .dj {
+    color: $site-pink;
+    background-image: linear-gradient(to right, $overlay-pink, $overlay-pink),
+      url(../images/2.jpeg);
+  }
+
+  .speech {
+    color: $site-green;
+    background-image: linear-gradient(to right, $overlay-green, $overlay-green),
+      url(../images/3.jpg);
+  }
+
+  .open {
+    color: $site-purple;
+    background-image: linear-gradient(
+        to right,
+        $overlay-purple,
+        $overlay-purple
+      ),
+      url(../images/4.jpg);
+
+    .title {
+      font-size: 115px;
+      bottom: -42px;
+    }
+  }
+
+  .inter {
+    color: $site-teal;
+    background-image: linear-gradient(to right, $overlay-teal, $overlay-teal),
+      url(../images/5.png);
+
+    .title {
+      font-size: 115px;
+      bottom: -42px;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    font-family: GillSans-LightItalic;
+    font-size: 16px;
+    padding: 50px 0 85px 0;
+    letter-spacing: 1.5px;
+    justify-content: space-between;
+
+    .left {
+      width: 490px;
+    }
+
+    .right {
+      width: 445px;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .galpage {
+    max-width: 650px;
+    padding-bottom: 600px;
+
+    .top {
+      margin: 0 auto;
+      width: 600px;
+
+      .num {
+        font-size: 200px;
+        bottom: -62px;
+      }
+
+      .title {
+        font-size: 85px;
+        bottom: -34px;
+        left: 160px;
+      }
+    }
+
+    .text {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 600px;
+
+      .left {
+        width: 590px;
+      }
+
+      .right {
+        width: 590px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/* styling for the footer at the bottom of the page */
+footer {
+  width: fill;
+  min-width: 650px;
+  height: 455px;
+  margin: 0 auto;
+  background-color: $site-pink;
+  text-align: center;
+  color: $site-white;
+  font-family: GillSans;
+  position: absolute;
+  margin-top: -455px;
+  clear: both;
+
+  .logo {
+    margin-bottom: 40px;
+    padding-top: 35px;
+  }
+
+  p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .input {
+    margin-top: 45px;
+
+    form {
+      display: flex;
+      justify-content: center;
+
+      input[type="email"] {
+        background-color: #f56b88;
+        border: none;
+        width: 530px;
+        height: 60px;
+      }
+
+      ::placeholder {
+        padding-left: 20px;
+        font-size: 16px;
+        color: $site-white;
+        opacity: 0.5;
+        font-family: GillSans;
+      }
+
+      input[type="submit"] {
+        width: 160px;
+        height: 60px;
+        background-color: $site-white;
+        color: $site-pink;
+        letter-spacing: 1px;
+        font-family: GillSans;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .icons {
+    width: 200px;
+    margin: 0 auto;
+
+    #facebook,
+    #twitter,
+    #instagram {
+      width: 30px;
+      height: 30px;
+      margin: 30px 15px 45px 15px;
+      cursor: pointer;
+    }
+  }
+
+  .copy {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  footer {
+    .input {
+      form {
+        input[type="email"] {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}

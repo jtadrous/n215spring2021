@@ -1,0 +1,145 @@
+/* styling for the home page */
+.home {
+  width: fill;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 455px;
+  //overflow: auto;
+  //min-height: 100vh;
+
+  .quote {
+    width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 65px 0;
+    font-size: 15px;
+
+    .text {
+      color: $site-yellow;
+      letter-spacing: 1px;
+      font-family: GillSans-SemiBoldItalic;
+      line-height: 22px;
+      padding-top: 10px;
+    }
+
+    .name {
+      font-family: PTSerif-Regular;
+      color: $site-pink;
+      margin: 25px 0 5px 0;
+    }
+
+    .job {
+      color: #a8a8a8;
+      font-size: 10px;
+      font-family: PTSerif-Regular;
+    }
+  }
+
+  .events {
+    background-color: $site-purple;
+    width: fill;
+    padding: 55px 40px;
+    color: $site-white;
+
+    .contain {
+      max-width: 1200px;
+
+      .head {
+        font-family: GillSans;
+        font-size: 25px;
+        border-bottom: 1px solid $site-white;
+        width: 400px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+      }
+
+      .calendar {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5px;
+
+        .date {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          .pink-box {
+            background-color: $site-pink;
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+
+            .num {
+              font-size: 22px;
+              font-family: GillSans-Bold;
+              padding-top: 10px;
+            }
+
+            .mo {
+              font-size: 12px;
+              font-family: GillSans-Light;
+            }
+
+            p {
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+
+          .right {
+            font-family: GillSans;
+            display: flex;
+            flex-direction: column;
+            height: 120px;
+            width: 140px;
+
+            .top {
+              font-size: 15px;
+            }
+
+            .bottom {
+              font-size: 13px;
+              color: $site-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .home {
+    max-width: 650px;
+
+    .quote {
+      width: 500px;
+    }
+
+    .events {
+      padding-bottom: 40px;
+      padding-left: 25px;
+
+      .contain {
+        min-width: 600px;
+        margin-left: 25px;
+
+        .head {
+          margin-left: 0;
+        }
+
+        .calendar {
+          flex-wrap: wrap;
+          width: 600px;
+
+          .date {
+            width: 45%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

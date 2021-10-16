@@ -1,0 +1,135 @@
+/* styling for the gallery page */
+.gallery {
+  width: 980px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 495px;
+  overflow: auto;
+  min-height: 100vh;
+
+  p {
+    font-size: 25px;
+    font-family: GillSans;
+    width: 230px;
+    padding-bottom: 10px;
+    border-bottom: solid $site-black 2px;
+    margin: 65px 0 25px 0;
+    letter-spacing: 2px;
+  }
+
+  .collage {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    #pic1 {
+      background-image: linear-gradient(
+          to right,
+          $overlay-yellow,
+          $overlay-yellow
+        ),
+        url(../images/1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 185px;
+      width: 485px;
+      cursor: pointer;
+    }
+
+    #pic2 {
+      background-image: linear-gradient(to right, $overlay-pink, $overlay-pink),
+        url(../images/2.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 185px;
+      width: 185px;
+      cursor: pointer;
+    }
+
+    #pic3 {
+      background-image: linear-gradient(
+          to right,
+          $overlay-green,
+          $overlay-green
+        ),
+        url(../images/3.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 185px;
+      width: 265px;
+      cursor: pointer;
+    }
+
+    #pic4 {
+      background-image: linear-gradient(
+          to right,
+          $overlay-purple,
+          $overlay-purple
+        ),
+        url(../images/4.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      width: 600px;
+      cursor: pointer;
+    }
+
+    #pic5 {
+      background-image: linear-gradient(to right, $overlay-teal, $overlay-teal),
+        url(../images/5.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      width: 355px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .gallery {
+    max-width: 650px;
+    padding-bottom: 850px;
+
+    p {
+      margin-left: 25px;
+    }
+
+    .collage {
+      width: 600px;
+
+      #pic1 {
+        width: 295px;
+        height: 115px;
+      }
+
+      #pic2 {
+        width: 115px;
+        height: 115px;
+      }
+
+      #pic3 {
+        width: 160px;
+        height: 115px;
+      }
+
+      #pic4 {
+        width: 365px;
+        height: 180px;
+      }
+
+      #pic5 {
+        width: 215px;
+        height: 180px;
+      }
+    }
+  }
+}

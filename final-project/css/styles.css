@@ -1,0 +1,894 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+/* global variables for the project */
+/* has to be imported first so other files can see it */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(fonts/Gill-Sans/GillSans.ttf);
+}
+@font-face {
+  font-family: GillSans-Italic;
+  src: url(fonts/Gill-Sans/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: GillSans-SemiBoldItalic;
+  src: url(fonts/Gill-Sans/GillSans-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: GillSans-Bold;
+  src: url(fonts/Gill-Sans/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: GillSans-Light;
+  src: url(fonts/Gill-Sans/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: GillSans-LightItalic;
+  src: url(fonts/Gill-Sans/GillSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: PTSerif-Bold;
+  src: url(fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTSerif-BoldItalic;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: PTSerif-Italic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: PTSerif-Regular;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+/* styling for the nav at the top of the page */
+.contain {
+  max-width: 1280px;
+  min-width: 650px;
+  margin: 0 auto;
+}
+.contain nav {
+  margin: 0 auto;
+  max-width: 980px;
+  border-bottom: #000000 solid 2px;
+  padding-bottom: 50px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: GillSans;
+}
+.contain nav .logo {
+  width: 92px;
+  height: 42px;
+  justify-content: left;
+  padding-top: 30px;
+}
+.contain nav .links {
+  width: 375px;
+  height: 35px;
+  justify-content: space-around;
+  align-self: center;
+  display: flex;
+}
+.contain nav .links .slant {
+  height: 25px;
+  border-right: 1px solid #ee4367;
+  transform: rotate(30deg) translateY(100%);
+  margin: 15px 0 0 22px;
+  padding-top: 20px;
+}
+.contain nav .links a {
+  text-decoration: none;
+  color: #000000;
+  margin: auto;
+  padding-top: 40px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.contain nav .links a:last-child {
+  border: none;
+  padding-right: 0px;
+}
+.contain .white {
+  border-color: #ffffff;
+}
+.contain .white .links a {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    width: 600px;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}
+/* styling for the footer at the bottom of the page */
+footer {
+  width: -webkit-fill-available;
+  width: fill;
+  min-width: 650px;
+  height: 455px;
+  margin: 0 auto;
+  background-color: #ee4367;
+  text-align: center;
+  color: #ffffff;
+  font-family: GillSans;
+  position: absolute;
+  margin-top: -455px;
+  clear: both;
+}
+footer .logo {
+  margin-bottom: 40px;
+  padding-top: 35px;
+}
+footer p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+footer .input {
+  margin-top: 45px;
+}
+footer .input form {
+  display: flex;
+  justify-content: center;
+}
+footer .input form input[type=email] {
+  background-color: #f56b88;
+  border: none;
+  width: 530px;
+  height: 60px;
+}
+footer .input form ::placeholder {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  font-family: GillSans;
+}
+footer .input form input[type=submit] {
+  width: 160px;
+  height: 60px;
+  background-color: #ffffff;
+  color: #ee4367;
+  letter-spacing: 1px;
+  font-family: GillSans;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+footer .icons {
+  width: 200px;
+  margin: 0 auto;
+}
+footer .icons #facebook,
+footer .icons #twitter,
+footer .icons #instagram {
+  width: 30px;
+  height: 30px;
+  margin: 30px 15px 45px 15px;
+  cursor: pointer;
+}
+footer .copy {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 980px) {
+  footer .input form input[type=email] {
+    max-width: 400px;
+  }
+}
+/* styling for the hero image at the top of the page */
+.hero {
+  max-width: 100%;
+  min-width: 650px;
+  height: 500px;
+  margin: 0 auto;
+  /* only works if you have a width defined */
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .title {
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+}
+.hero .title .header {
+  font-family: PTSerif-Regular;
+  font-size: 40px;
+  margin-top: 63px;
+  margin-bottom: 9px;
+}
+.hero .title .subtext {
+  font-size: 20px;
+  font-family: GillSans-Italic;
+  color: #ee4367;
+}
+.hero .title .tagline {
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: GillSans-Italic;
+}
+.hero .title button {
+  background-color: #ee4367;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 15px;
+  margin-top: 35px;
+  font-family: GillSans;
+  cursor: pointer;
+}
+
+/* styling for the home page */
+.home {
+  width: -webkit-fill-available;
+  width: fill;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 455px;
+}
+.home .quote {
+  width: 800px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 65px 0;
+  font-size: 15px;
+}
+.home .quote .text {
+  color: #ffd140;
+  letter-spacing: 1px;
+  font-family: GillSans-SemiBoldItalic;
+  line-height: 22px;
+  padding-top: 10px;
+}
+.home .quote .name {
+  font-family: PTSerif-Regular;
+  color: #ee4367;
+  margin: 25px 0 5px 0;
+}
+.home .quote .job {
+  color: #a8a8a8;
+  font-size: 10px;
+  font-family: PTSerif-Regular;
+}
+.home .events {
+  background-color: #540d6e;
+  width: -webkit-fill-available;
+  width: fill;
+  padding: 55px 40px;
+  color: #ffffff;
+}
+.home .events .contain {
+  max-width: 1200px;
+}
+.home .events .contain .head {
+  font-family: GillSans;
+  font-size: 25px;
+  border-bottom: 1px solid #ffffff;
+  width: 400px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+.home .events .contain .calendar {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+.home .events .contain .calendar .date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.home .events .contain .calendar .date .pink-box {
+  background-color: #ee4367;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+.home .events .contain .calendar .date .pink-box .num {
+  font-size: 22px;
+  font-family: GillSans-Bold;
+  padding-top: 10px;
+}
+.home .events .contain .calendar .date .pink-box .mo {
+  font-size: 12px;
+  font-family: GillSans-Light;
+}
+.home .events .contain .calendar .date .pink-box p {
+  margin: 0 auto;
+  text-align: center;
+}
+.home .events .contain .calendar .date .right {
+  font-family: GillSans;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 140px;
+}
+.home .events .contain .calendar .date .right .top {
+  font-size: 15px;
+}
+.home .events .contain .calendar .date .right .bottom {
+  font-size: 13px;
+  color: #ee4367;
+}
+
+@media only screen and (max-width: 980px) {
+  .home {
+    max-width: 650px;
+  }
+  .home .quote {
+    width: 500px;
+  }
+  .home .events {
+    padding-bottom: 40px;
+    padding-left: 25px;
+  }
+  .home .events .contain {
+    min-width: 600px;
+    margin-left: 25px;
+  }
+  .home .events .contain .head {
+    margin-left: 0;
+  }
+  .home .events .contain .calendar {
+    flex-wrap: wrap;
+    width: 600px;
+  }
+  .home .events .contain .calendar .date {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+/* styling for the about page */
+.about {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 455px;
+  overflow: auto;
+  min-height: 100vh;
+}
+.about .head {
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 380px;
+}
+.about .head .title {
+  font-size: 25px;
+  font-family: GillSans;
+  border-bottom: solid #000000 2px;
+  width: 230px;
+  position: absolute;
+  bottom: -34px;
+  padding-bottom: 12px;
+  letter-spacing: 2px;
+}
+.about .para {
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+  font-size: 16px;
+  font-family: GillSans-LightItalic;
+  letter-spacing: 1.6px;
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    max-width: 650px;
+    padding-bottom: 600px;
+  }
+  .about .head {
+    width: 600px;
+  }
+  .about .head .title {
+    bottom: -36px;
+  }
+  .about .para {
+    width: 600px;
+  }
+}
+/* styling for the gallery page */
+.gallery {
+  width: 980px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 495px;
+  overflow: auto;
+  min-height: 100vh;
+}
+.gallery p {
+  font-size: 25px;
+  font-family: GillSans;
+  width: 230px;
+  padding-bottom: 10px;
+  border-bottom: solid #000000 2px;
+  margin: 65px 0 25px 0;
+  letter-spacing: 2px;
+}
+.gallery .collage {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.gallery .collage #pic1 {
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 185px;
+  width: 485px;
+  cursor: pointer;
+}
+.gallery .collage #pic2 {
+  background-image: linear-gradient(to right, rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 185px;
+  width: 185px;
+  cursor: pointer;
+}
+.gallery .collage #pic3 {
+  background-image: linear-gradient(to right, rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 185px;
+  width: 265px;
+  cursor: pointer;
+}
+.gallery .collage #pic4 {
+  background-image: linear-gradient(to right, rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 600px;
+  cursor: pointer;
+}
+.gallery .collage #pic5 {
+  background-image: linear-gradient(to right, rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 355px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+  .gallery {
+    max-width: 650px;
+    padding-bottom: 850px;
+  }
+  .gallery p {
+    margin-left: 25px;
+  }
+  .gallery .collage {
+    width: 600px;
+  }
+  .gallery .collage #pic1 {
+    width: 295px;
+    height: 115px;
+  }
+  .gallery .collage #pic2 {
+    width: 115px;
+    height: 115px;
+  }
+  .gallery .collage #pic3 {
+    width: 160px;
+    height: 115px;
+  }
+  .gallery .collage #pic4 {
+    width: 365px;
+    height: 180px;
+  }
+  .gallery .collage #pic5 {
+    width: 215px;
+    height: 180px;
+  }
+}
+/* styling for the individual gallery pages */
+.galpage {
+  max-width: 980px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 455px;
+  overflow: auto;
+  min-height: 100vh;
+}
+.galpage .top {
+  height: 400px;
+  width: 980px;
+  position: relative;
+  font-family: GillSans;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.galpage .top .num {
+  font-size: 300px;
+  position: absolute;
+  bottom: -85px;
+}
+.galpage .top .title {
+  position: absolute;
+  font-size: 140px;
+  bottom: -47px;
+  left: 250px;
+}
+.galpage .food {
+  color: #ffd140;
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/1.png);
+}
+.galpage .food .title {
+  left: 215px;
+}
+.galpage .dj {
+  color: #ee4367;
+  background-image: linear-gradient(to right, rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/2.jpeg);
+}
+.galpage .speech {
+  color: #08ad69;
+  background-image: linear-gradient(to right, rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/3.jpg);
+}
+.galpage .open {
+  color: #540d6e;
+  background-image: linear-gradient(to right, rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/4.jpg);
+}
+.galpage .open .title {
+  font-size: 115px;
+  bottom: -42px;
+}
+.galpage .inter {
+  color: #3bceab;
+  background-image: linear-gradient(to right, rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/5.png);
+}
+.galpage .inter .title {
+  font-size: 115px;
+  bottom: -42px;
+}
+.galpage .text {
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+  font-family: GillSans-LightItalic;
+  font-size: 16px;
+  padding: 50px 0 85px 0;
+  letter-spacing: 1.5px;
+  justify-content: space-between;
+}
+.galpage .text .left {
+  width: 490px;
+}
+.galpage .text .right {
+  width: 445px;
+}
+
+@media only screen and (max-width: 980px) {
+  .galpage {
+    max-width: 650px;
+    padding-bottom: 600px;
+  }
+  .galpage .top {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .galpage .top .num {
+    font-size: 200px;
+    bottom: -62px;
+  }
+  .galpage .top .title {
+    font-size: 85px;
+    bottom: -34px;
+    left: 160px;
+  }
+  .galpage .text {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .galpage .text .left {
+    width: 590px;
+  }
+  .galpage .text .right {
+    width: 590px;
+  }
+}
+/* styling for the blog page */
+.blog {
+  max-width: 980px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 510px;
+  overflow: auto;
+  min-height: 100vh;
+}
+.blog .head {
+  font-family: GillSans;
+  font-size: 25px;
+  letter-spacing: 2px;
+  width: 230px;
+  padding: 60px 0 10px 0;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000000;
+}
+.blog .dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 980px;
+}
+.blog .dates .date {
+  width: 47%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.blog .dates .date .pink-box {
+  background-color: #ee4367;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+.blog .dates .date .pink-box .num {
+  font-size: 22px;
+  font-family: GillSans-Bold;
+  padding-top: 10px;
+}
+.blog .dates .date .pink-box .mo {
+  font-size: 12px;
+  font-family: GillSans-Light;
+}
+.blog .dates .date .pink-box p {
+  margin: 0 auto;
+  text-align: center;
+}
+.blog .dates .date .right {
+  width: 380px;
+}
+.blog .dates .date .right .banner {
+  height: 140px;
+  background-image: url(../images/blog.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.blog .dates .date .right .title {
+  font-family: GillSans;
+  font-size: 15px;
+}
+.blog .dates .date .right .para {
+  font-family: GillSans;
+  font-size: 13px;
+  color: #ee4367;
+}
+
+@media only screen and (max-width: 980px) {
+  .blog {
+    max-width: 650px;
+  }
+  .blog .head {
+    margin-left: 30px;
+  }
+  .blog .dates {
+    width: 600px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .blog .dates .date {
+    width: 100%;
+  }
+  .blog .dates .date .right {
+    width: 89%;
+  }
+  .blog .dates .date .right .banner {
+    height: 200px;
+  }
+}
+/* styling for the blog post pages */
+.post {
+  max-width: 980px;
+  min-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 600px;
+  overflow: auto;
+  min-height: 100vh;
+  padding-top: 55px;
+}
+.post .banner {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(238, 67, 103, 0.6), rgba(238, 67, 103, 0.6)), url(../images/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 980px;
+  height: 300px;
+}
+.post .banner .pink-box {
+  background-color: #ee4367;
+  height: 155px;
+  width: 155px;
+  margin-right: 20px;
+  color: #ffffff;
+  position: absolute;
+  left: 410px;
+  top: 70px;
+}
+.post .banner .pink-box .num {
+  font-size: 55px;
+  font-family: GillSans-Bold;
+  padding-top: 25px;
+}
+.post .banner .pink-box .mo {
+  font-size: 31px;
+  font-family: GillSans-Light;
+}
+.post .banner .pink-box p {
+  margin: 0 auto;
+  text-align: center;
+}
+.post .head {
+  color: #ee4367;
+  font-family: GillSans;
+  font-size: 20px;
+  padding-top: 57px;
+}
+.post .para {
+  font-family: GillSans-Light;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  width: 855px;
+}
+
+@media only screen and (max-width: 980px) {
+  .post {
+    max-width: 600px;
+  }
+  .post .banner {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .post .banner .pink-box {
+    left: 235px;
+  }
+  .post .head {
+    margin-left: 30px;
+  }
+  .post .para {
+    width: 550px;
+    margin-left: 30px;
+  }
+}
+/* styling for the contact page */
+.contact {
+  width: 980px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 455px;
+  overflow: auto;
+  min-height: 100vh;
+}
+.contact .head {
+  font-family: GillSans;
+  font-size: 25px;
+  letter-spacing: 2px;
+  width: 230px;
+  padding-top: 65px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #000000;
+}
+.contact .contain {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 0 80px 0;
+  justify-content: space-between;
+}
+.contact .contain .right {
+  padding-top: 20px;
+  width: 400px;
+  height: 440px;
+  background-image: url(../images/map.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact .contain .left {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contain .left form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contain .left form input,
+.contact .contain .left form textarea {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 530px;
+  font-size: 16px;
+  font-family: GillSans;
+}
+.contact .contain .left form #submit {
+  background-color: #ee4367;
+  color: #ffffff;
+  width: 170px;
+  font-size: 16px;
+  font-family: GillSans;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+  .contact {
+    max-width: 650px;
+  }
+  .contact .head {
+    margin-left: 30px;
+  }
+  .contact .contain {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .contact .contain .right {
+    width: 600px;
+    margin: 40px auto;
+  }
+  .contact .contain .left {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .contact .contain .left form input,
+.contact .contain .left form textarea {
+    width: 100%;
+  }
+}

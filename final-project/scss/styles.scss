@@ -1,0 +1,24 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+@import "variables.scss"; /* has to be imported first so other files can see it */
+@import "structure.scss";
+@import "nav.scss";
+@import "footer.scss";
+
+//Home assets
+@import "home/hero.scss";
+@import "home/home.scss";
+
+//About assets
+@import "about/about.scss";
+
+//Gallery assets
+@import "gallery/gallery.scss";
+@import "gallery/gallery-pages.scss";
+
+//Blog assets
+@import "blog/blog.scss";
+@import "blog/post.scss";
+
+//Contact assets
+@import "contact/contact.scss";
