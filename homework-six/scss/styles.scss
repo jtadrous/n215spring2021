@@ -1,0 +1,20 @@
+/*for all other styling*/
+/*anytime you create a new sass file, you have to import it here*/
+@import "variables.scss"; /* has to be imported first so other files can see it */
+@import "mixins.scss";
+@import "structure.scss";
+@import "nav.scss";
+@import "footer.scss";
+
+//Home assets
+@import "home/hero.scss";
+@import "home/promo-tours.scss";
+@import "home/booking-form.scss";
+
+//About assets
+@import "about/about.scss";
+
+//Tour assets
+@import "tours/tour.scss";
+@import "tours/tour-page.scss";
+@import "tours/pics.scss";

@@ -1,0 +1,67 @@
+/* styling for the nav bar at the top of the page */
+.contain {
+  //width: 100%;
+  max-width: 1280px;
+  min-width: 650px;
+  margin: 0 auto;
+
+  nav {
+    max-width: 980px;
+    border-bottom: black solid 2px;
+    padding: 20px 0;
+    //width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Gill Sans Regular;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      justify-content: left;
+    }
+
+    .links {
+      width: 542px;
+      height: 42px;
+      justify-content: space-around;
+      align-self: center;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: black;
+        margin: auto;
+        padding: 2px 23px 0;
+        border-right: 1px solid $site-blue;
+        font-size: 15px;
+
+        &:last-child {
+          border: none;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  .white {
+    border-color: $white;
+
+    .links {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .contain {
+    nav {
+      max-width: 620px;
+      height: auto;
+      flex-wrap: nowrap;
+    }
+  }
+}

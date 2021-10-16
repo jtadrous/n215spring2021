@@ -1,0 +1,172 @@
+/* styling for the front tour page */
+.tour {
+  margin: 0 auto;
+  width: 980px;
+
+  header {
+    @include center(980px, 50px auto 0 auto);
+    height: 200px;
+    background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tours-header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      letter-spacing: 4px;
+      font-family: Proxima Nova;
+      font-size: $large-text;
+      color: $white;
+      text-transform: uppercase; //makes the letters uppercase no matter what
+    }
+  }
+
+  .tours {
+    @include center(818px, 48px auto 0 auto);
+    min-width: 650px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .tourPromo {
+      text-align: center;
+      color: $white;
+      width: 236px;
+      height: 304px;
+      margin-bottom: 55px;
+
+      button {
+        @include siteButton(12px 25px, 20px);
+        margin-top: 40px;
+        font-family: Gill Sans Regular;
+        border: none;
+        font-size: 15px;
+        color: $white;
+        cursor: pointer;
+      }
+
+      p {
+        padding-top: 50px;
+      }
+    
+      .country {
+        font-size: $large-text;
+        font-family: Proxima Nova;
+      }
+    
+      .cost {
+        font-size: 30px;
+        font-family: Proxima Nova;
+      }
+    }
+
+    .israel {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .usa {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-02.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .australia {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-03.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .newZealand {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-04.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .france {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-05.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .egypt {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-06.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .japan {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-07.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .canada {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-08.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .uae {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+        url(../images/tour-09.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+@media all and (max-width: 980px) {
+  .tour {
+    max-width: 650px;
+
+    header {
+      width: 620px;
+      margin-left: 15px;
+    }
+
+    .tours {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

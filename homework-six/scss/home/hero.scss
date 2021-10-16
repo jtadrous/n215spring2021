@@ -1,0 +1,42 @@
+/* styling for the hero image at the top of the page */
+.hero {
+  //width: 100%;
+  max-width: 1280px;
+  min-width: 650px;
+  height: 500px;
+  margin: 0 auto; /* only works if you have a width defined */
+  background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: $white;
+
+    .name {
+      font-family: Proxima Nova;
+      font-size: $large-text;
+      margin-top: 75px;
+    }
+
+    .lorem {
+      font-size: 20px;
+      margin-top: 30px;
+      font-family: Gill Sans Italics;
+    }
+
+    button {
+      background-color: $site-blue;
+      color: $white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 15px;
+      margin-top: 25px;
+      font-family: Gill Sans Regular;
+    }
+  }
+}

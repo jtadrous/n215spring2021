@@ -1,0 +1,31 @@
+/* styling for the footer at the bottom of the page */
+footer {
+  max-width: 1280px;
+  min-width: 650px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: $site-blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .logo {
+    width: 30%;
+  }
+
+  p {
+    width: 40%;
+    margin-top: 20px;
+    height: 90%;
+    font-family: Gill Sans Regular;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons {
+    width: 30%;
+  }
+}

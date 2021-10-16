@@ -1,0 +1,145 @@
+/* styling for the individual tour pages */
+.tour-page {
+  margin: 0 auto;
+  display: block;
+  width: 980px;
+
+    header {
+      @include center(980px, 50px auto 0 auto);
+      //min-width: 650px;
+      height: 415px;
+      position: relative;
+      color: $white;
+
+      .top {
+        font-family: Proxima Nova;
+        font-size: 80px;
+        padding: 30px 0 0 30px;
+      }
+
+      .bottom {
+        position: absolute;
+        opacity: 70%;
+        right: 5px;
+        bottom: -25px;
+        font-family: Proxima Nova;
+        font-size: 30px;
+      }
+    }
+
+    .israel {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-01.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .usa {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-02.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .australia {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-03.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .zealand {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-04.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .france {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-05.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .egypt {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-06.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .japan {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-07.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .canada {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-08.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .uae {
+      background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour-09.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+  .text {
+    margin-bottom: 100px;
+
+    .day {
+      width: 160px;
+      font-size: $large-text;
+      font-family: Proxima Nova;
+      border-bottom: black 2px solid;
+      letter-spacing: 4px;
+    }
+
+    .para {
+      font-family: Gill Sans Regular;
+      font-size: $about-font-size;
+      letter-spacing: 2px;
+      padding-bottom: 70px;
+      padding-top: 20px;
+    }
+
+    button {
+      margin: 0 auto;
+      margin-top: 30px;
+      display: block;
+      font-family: Gill Sans Regular;
+      background-color: $site-blue;
+      padding: 12px 25px;
+      border: none;
+      font-size: 15px;
+      border-radius: 20px;
+      color: $white;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .tour-page {
+    max-width: 650px;
+
+    header {
+      width: 620px;
+    }
+
+    .text {
+      margin: 0 auto;
+      padding-bottom: 80px;
+      width: 620px;
+
+      .para {
+        width: 97%;
+      }
+    }
+  }
+}

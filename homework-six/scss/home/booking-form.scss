@@ -1,0 +1,104 @@
+/* styling for the booking form on the home page */
+.booking-form {
+  max-width: 825px;
+  //width: 65%;
+  min-height: 1050px;
+  margin: 0 auto;
+
+  .header {
+    padding: 60px 0 10px 0;
+    font-size: $large-text;
+    font-family: Proxima Nova;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+    font-family: Gill Sans Light;
+    margin-bottom: 50px;
+
+    input,
+    textarea,
+    select {
+      border: 1px solid $site-blue;
+      padding: 20px;
+      font-size: 18px;
+      font-family: Gill Sans Light;
+    }
+
+    label {
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #name,
+    #country {
+      min-width: 44%;
+    }
+
+    #email,
+    #hotel {
+      min-width: 54%;
+    }
+
+    #checkin,
+    #checkout {
+      min-width: 85%;
+      float: right;
+    }
+
+    #submit {
+      margin-top: 40px;
+      font-family: Gill Sans Regular;
+      background-color: $site-blue;
+      padding: 25px;
+      border: none;
+      font-size: 15px;
+      border-radius: 35px;
+      color: $white;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .booking-form {
+    min-width: 650px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    #name,
+    #country {
+      margin-bottom: 20px;
+    }
+
+    #name,
+    #country,
+    #email,
+    #hotel,
+    #checkin,
+    #checkout {
+      width: 100%;
+    }
+  }
+}
