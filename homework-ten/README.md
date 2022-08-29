@@ -1,3 +1,3 @@
 ## Homework Ten
 
-Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/homework-ten/
+Live Link: https://jtadrous.github.io/n215spring2021/homework-ten/index.html
