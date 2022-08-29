@@ -1,3 +1,3 @@
 ## Homework Nine
 
-Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/homework-nine/
+Live Link: https://jtadrous.github.io/n215spring2021/homework-nine/index.html
