@@ -1,3 +1,3 @@
 ## Final Project
 
-Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/final-project/
+Live Link: https://jtadrous.github.io/n215spring2021/final-project/index.html
