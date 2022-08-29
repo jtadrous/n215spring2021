@@ -1,3 +1,3 @@
 ## Homework Six
 
-Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N215/homework-six/pages/tour.html
+Live Link: https://jtadrous.github.io/n215spring2021/homework-six/pages/tour.html
